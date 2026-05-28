@@ -1,0 +1,11 @@
+[package]
+name = "tropical-attention"
+version = "0.1.0"
+edition = "2021"
+description = "Tropical attention mechanisms — max-plus softmax, tropical transformer layers, and polyhedral decision boundaries for neural architectures"
+license = "MIT"
+keywords = ["tropical", "attention", "transformer", "neural", "max-plus"]
+categories = ["mathematics", "science"]
+repository = "https://github.com/SuperInstance/tropical-attention"
+
+[lib]
