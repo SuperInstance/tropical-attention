@@ -73,14 +73,14 @@ impl NewtonPolytope {
         if self.vertices.is_empty() {
             return vec![];
         }
-        let n = self.vertices.len() as f64;
+        let _n = self.vertices.len() as f64;
         (0..self.dimension)
             .map(|d| self.vertices.iter().map(|v| v[d]).sum::<f64>() / n)
             .collect()
     }
 
     /// Subdivide: split the polytope at a given point (for mixed subdivision).
-    pub fn subdivide(&self, lift: &[f64]) -> Vec<NewtonPolytope> {
+    pub fn subdivide(&self, _lift: &[f64]) -> Vec<NewtonPolytope> {
         if self.vertices.len() <= self.dimension + 1 {
             return vec![self.clone()];
         }

@@ -18,7 +18,7 @@ impl TropicalTransformerLayer {
 
     /// Forward pass: attention + residual + tropical ReLU FFN + residual.
     pub fn forward(&self, input: &[Vec<f64>]) -> Vec<Vec<f64>> {
-        let n = input.len();
+        let _n = input.len();
         let dim = input.first().map(|v| v.len()).unwrap_or(0);
 
         // Self-attention
