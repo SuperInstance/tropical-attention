@@ -73,7 +73,7 @@ impl NewtonPolytope {
         if self.vertices.is_empty() {
             return vec![];
         }
-        let _n = self.vertices.len() as f64;
+        let n = self.vertices.len() as f64;
         (0..self.dimension)
             .map(|d| self.vertices.iter().map(|v| v[d]).sum::<f64>() / n)
             .collect()
